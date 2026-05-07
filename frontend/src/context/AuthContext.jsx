@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (token) {
-      axios.get("http://localhost:5000/api/user/profile", {
+      axios.get("https://community-page-mern.vercel.app/api/user/profile", {
         headers: {
           Authorization: `Bearer ${token}`
         }
